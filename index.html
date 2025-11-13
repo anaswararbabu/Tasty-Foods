@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasty Foods</title>
+  <link rel="stylesheet" href="restaurant.css">
+  <link rel="stylesheet" href="/Day7/css/bootstrap.css">
+
+</head>
+
+<body>
+
+  <!---Nav Bar-->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fw-bold" href="#">Tasty Foods</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#carouselExampleIndicators">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#order">Orders</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Deals
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#footer">Location</a>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!---Carousal-->
+  <!-- Bootstrap Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/Day7/food images/sadya-1024x576.jpg" class="slide d-block w-100" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="text-dark">Delicious Food</h5>
+            <p class="text-dark">Freshly made meals for every taste.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="/Day7/food images/gh.jpeg" class="slide d-block w-100" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="text-dark">Hot and Spicy</h5>
+            <p class="text-dark">Feel the flavor explosion.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="/Day7/food images/Kerala-kappa.jpg" class="slide d-block w-100" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="text-danger">Sweet Treats</h5>
+            <p class="text-danger">End your meal on a high note.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--Order SEction--->
+  <div class="container" id="order">
+    <h1 class="text-center">Order Your Foods now</h1>
+    <div class="row my-2">
+      <div class="col-4">
+        <div class="card border-2 border-warning" style="width: 18rem; height:30rem">
+          <img class="card-img-top" src="/Day7/food images/biriyani.jpeg" alt="Card image cap"style="height: 200px;object-fit:cover">
+          <div class="card-body">
+            <h5 class="card-title text-center">ChickenBiriyani</h5>
+            <p class="card-text text-center">Tasty Chicken Biriyani</p>
+            <h5 class="card-title text-danger text-center">Rs.199.00</h5>
+            <div class="text-center">
+              <a href="#" class="btn btn-primary ">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card border-2 border-warning" style="width: 18rem; height:30rem">
+          <img class="card-img-top" src="/Day7/food images/sadya.jpg" alt="Card image cap"style="height: 200px;object-fit:cover">
+          <div class="card-body">
+            <h5 class="card-title text-center">Kerala Sadhya</h5>
+            <p class="card-text text-center">Authentic Kerala Sadhya</p>
+            <h5 class="card-title text-danger text-center">Rs.149.00</h5>
+            <div class="text-center">
+              <a href="#" class="btn btn-primary ">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card border-2 border-warning" style="width: 18rem; height: 30rem;">
+          <img class="card-img-top" src="/Day7/food images/dosa.jpeg" alt="Card image cap"style="height: 200px;object-fit:cover">
+          <div class="card-body">
+            <h5 class="card-title text-center">Ghee Roast</h5>
+            <p class="card-text text-center">Traditional Dosa set</p>
+            <h5 class="card-title text-danger text-center">Rs.79.00</h5>
+            <div class="text-center">
+              <a href="#" class="btn btn-primary ">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  <div class="row my-3">
+    <div class="col-4">
+      <div class="card border-2 border-warning" style="width: 18rem; height: 30rem;">
+        <img class="card-img-top" src="/Day7/food images/Kerala-kappa.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-center">Traditional Kerala-kappa</h5>
+          <p class="card-text text-center">Kappa Combo</p>
+          <h5 class="card-title text-danger text-center">Rs.109.00</h5>
+          <div class="text-center">
+            <a href="#" class="btn btn-primary ">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card border-2 border-warning" style="width: 18rem; height: 30rem;">
+        <img class="card-img-top" src="/Day7/food images/beef.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-center"> Beef Roast</h5>
+          <p class="card-text text-center">Spicy Beef Roast</p>
+          <h5 class="card-title text-danger text-center">Rs.199.00</h5>
+          <div class="text-center">
+            <a href="#" class="btn btn-primary ">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card border-2 border-warning" style="width: 18rem; height: 30rem;">
+        <img class="card-img-top" src="/Day7/food images/Puttu.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-center">Put&Beef</h5>
+          <p class="card-text text-center">Spicy Put Biriyani</p>
+          <h5 class="card-title text-danger text-center">Rs.99.00</h5>
+          <div class="text-center">
+            <a href="#" class="btn btn-primary ">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--footer--->
+  <div class="container-fluid bg-warning" id="footer">
+    <div class="row">
+      <h1 class="text-center">Location</h1>
+      <div class="col-6">
+        <h1 class="text-white">Tasty Food Restaurant</h1>
+        <h4> Trivandrum,Kerala </h4>
+        <p>Tel:012345</p>
+        <p>Email:tasty@gmail.com</p>
+        <p>Website:www.tasty.com </p>
+      </div>
+      <div class="col-6">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63125.124673442966!2d76.82673007717302!3d8.565168645136145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bfa8f5acc5af%3A0xffc1d0fea67ea195!2sAl-Saj%20International%20Convention%20Center!5e0!3m2!1sen!2sin!4v1762240411027!5m2!1sen!2sin"
+          width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="/Day7/js/bootstrap.js"></script>
+
+</body>
+
+</html>
